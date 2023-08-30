@@ -25,6 +25,17 @@ class MyDocument extends Document {
           <link rel="manifest" href="/favicon/site.webmanifest" />
         </Head>
         <body>
+          {/* Your additional content */}
+          <p>
+            YouTube Thumbnail Downloader
+            ▷ Save YT Video Thumbnails
+            Get free thumbnail image of any youtube videos in Full HD(1080), HD
+            (720), SD, and also in small size. it's currently supported formats:
+            YouTube (HD, HQ, 1080p, 4K) videos
+          </p>
+
+          {/* ... continue adding the rest of the provided content ... */}
+
           <Main />
           <NextScript />
         </body>
@@ -34,3 +45,4 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
+
