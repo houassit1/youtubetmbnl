@@ -23,16 +23,25 @@ class MyDocument extends Document {
             href="/favicon/favicon-16x16.png"
           />
           <link rel="manifest" href="/favicon/site.webmanifest" />
+
+          <style>
+            {`
+              h2.nav-title {
+                color: #555555;
+                font-size: 21px;
+                width: 236px;
+                height: 21px;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+            `}
+          </style>
         </Head>
         <body>
-          {/* Your additional content */}
-          <p>
-            YouTube Thumbnail Downloader
-            ▷ Save YT Video Thumbnails
-            Get free thumbnail image of any youtube videos in Full HD(1080), HD
-            (720), SD, and also in small size. it's currently supported formats:
-            YouTube (HD, HQ, 1080p, 4K) videos
-          </p>
+          <h2 className="nav-title">Download Youtube Thumbnail</h2>
 
           <Main />
           <NextScript />
@@ -69,4 +78,3 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
-
