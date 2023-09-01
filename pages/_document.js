@@ -37,6 +37,18 @@ class MyDocument extends Document {
                 top: 0;
                 left: 0;
               }
+              /* تنسيق النص الذي تريد إضافته */
+              .custom-text {
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: black;
+                text-align: center;
+                margin: 2rem auto;
+                border: 2px solid black;
+                padding: 1rem;
+                max-width: 600px;
+                background-color: white; /* لون الخلفية */
+              }
             `}
           </style>
         </Head>
@@ -46,18 +58,9 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
 
-          <div style={{
-            margin: "2rem auto",
-            textAlign: "center",
-            border: "2px dashed #999",
-            padding: "1rem",
-            maxWidth: "600px",
-          }}>
-            <p style={{
-              fontSize: "2rem",
-              fontWeight: "bold",
-              marginBottom: "1rem",
-            }}>
+          {/* إضافة النص داخل الإطار المزخرف */}
+          <div className="custom-text">
+            <p>
               <span style={{ color: "#FF0000" }}>YouTube Thumbnail Downloader</span>
             </p>
             <p>
