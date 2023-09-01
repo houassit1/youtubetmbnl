@@ -46,24 +46,24 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
 
-          {/* إضافة النص بسمك متوسط باللون الأسود ووسط الصفحة داخل إطار مزخرف */}
           <div style={{
             margin: "2rem auto",
             textAlign: "center",
-            border: "2px dashed #000", /* لون الإطار */
+            border: "2px dashed #999",
             padding: "1rem",
             maxWidth: "600px",
           }}>
             <p style={{
-              fontSize: "1.5rem", /* حجم النص بسمك متوسط */
-              fontWeight: "bold", /* وزن النص بسمك متوسط */
-              color: "black", /* لون النص الأسود */
+              fontSize: "2rem",
+              fontWeight: "bold",
               marginBottom: "1rem",
             }}>
-              YouTube Thumbnail Downloader
+              <span style={{ color: "#FF0000" }}>YouTube Thumbnail Downloader</span>
             </p>
             <p>
-              ▷ Save YT Video Thumbnails
+              <span style={{ fontSize: "1.2rem" }}>
+                ▷ Save YT Video Thumbnails
+              </span>
             </p>
             <p>
               Get free thumbnail image of any YouTube videos in Full HD(1080), HD
@@ -75,6 +75,3 @@ class MyDocument extends Document {
       </Html>
     );
   }
-}
-
-export default MyDocument;
